@@ -14,7 +14,7 @@ ___
 
 ### About Me
 
-I don't know FE
+I want to know FE
 
 ___
 
