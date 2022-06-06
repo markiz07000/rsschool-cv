@@ -19,24 +19,28 @@ I want to know FE
 ___
 
 ### Skills
+
 * ***HTML***
 * ***CSS***
 * ***JS***
-
 ___
 
- ### Code example
+### Code example
 
 `console.log('Hello world!');`
+
 ___
 
 ### Experience
+
 * RS School courses
-
 ___
+
 ### Education
-**University** **VSMU**
 
+**University** **VSMU**
 ___
+
 ### English
+
 * **B2**
