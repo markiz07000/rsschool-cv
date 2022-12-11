@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: darkseagreen;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #4d2323;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    position: relative;
+    width: 50%;
+
+}
+.section:after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    top: 200px;
+    display: block;
+    background-color: purple;
+}
+.section:first-child:after{
+    width: 100%;
+    height: 10px;
+    background-color: burlywood;
+}
+.section:nth-last-child(1):after, .section:nth-last-child(2):after{
+    display: none;
+}
+
+.section:nth-last-child(1), .section:nth-last-child(2){
+    padding-bottom: 20px;
+}
+.section:first-child{
+    width: 100%;
+}
+
+.section-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+    padding: 20px 0;
+}
+.section-list{
+    margin: 0;
+    list-style: none;
+}
+.section-item{
+    position: relative;
+}
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #829985;
+}
+.section-contacts{
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile-content{
+    text-align: center;
+}
+.profile-name{
+    position: relative;
+}
+.profile-name:after{
+    margin-left: 100px;
+    content: "";
+    position: absolute;
+    top: 70px;
+    width: 50%;
+    height: 1px;
+    display: block;
+    background-color: green;
+}
+.footer{
+    background-color: darkseagreen;
+}
+.footer-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content{
+    margin: 0;
+    display: flex;
+}
+.footer-years{
+    padding: 0 20px;
+}
+.footer-github{
+    padding: 0 20px;
+}
+.footer-img {
+    width: 50px;
+    height: 30px;
+
+}
